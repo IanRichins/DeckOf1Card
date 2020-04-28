@@ -13,6 +13,11 @@
 		FE9C66352458DB3200CF8FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9C66332458DB3200CF8FB1 /* Main.storyboard */; };
 		FE9C66372458DB3200CF8FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9C66362458DB3200CF8FB1 /* Assets.xcassets */; };
 		FE9C663A2458DB3200CF8FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9C66382458DB3200CF8FB1 /* LaunchScreen.storyboard */; };
+		FE9C66482458DBAE00CF8FB1 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9C66472458DBAE00CF8FB1 /* CardViewController.swift */; };
+		FE9C664A2458DBE900CF8FB1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9C66492458DBE900CF8FB1 /* Card.swift */; };
+		FE9C664C2458DC0800CF8FB1 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9C664B2458DC0800CF8FB1 /* CardController.swift */; };
+		FE9C664E2458DC4000CF8FB1 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9C664D2458DC4000CF8FB1 /* CardError.swift */; };
+		FE9C66502458DC6600CF8FB1 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9C664F2458DC6600CF8FB1 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		FE9C66362458DB3200CF8FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE9C66392458DB3200CF8FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE9C663B2458DB3200CF8FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE9C66472458DBAE00CF8FB1 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		FE9C66492458DBE900CF8FB1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FE9C664B2458DC0800CF8FB1 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		FE9C664D2458DC4000CF8FB1 /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
+		FE9C664F2458DC6600CF8FB1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		FE9C662C2458DB3200CF8FB1 /* DeckOf1Card(withworkingfiles) */ = {
 			isa = PBXGroup;
 			children = (
+				FE9C66462458DB9300CF8FB1 /* View */,
+				FE9C66452458DB8B00CF8FB1 /* ViewController */,
+				FE9C66442458DB8400CF8FB1 /* ModelController */,
+				FE9C66432458DB7C00CF8FB1 /* Models */,
+				FE9C66422458DB7400CF8FB1 /* Helpers */,
+				FE9C66412458DB4D00CF8FB1 /* Resorces */,
+				FE9C66312458DB3200CF8FB1 /* ViewController.swift */,
+			);
+			path = "DeckOf1Card(withworkingfiles)";
+			sourceTree = "<group>";
+		};
+		FE9C66412458DB4D00CF8FB1 /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
 				FE9C662D2458DB3200CF8FB1 /* AppDelegate.swift */,
 				FE9C662F2458DB3200CF8FB1 /* SceneDelegate.swift */,
-				FE9C66312458DB3200CF8FB1 /* ViewController.swift */,
-				FE9C66332458DB3200CF8FB1 /* Main.storyboard */,
 				FE9C66362458DB3200CF8FB1 /* Assets.xcassets */,
 				FE9C66382458DB3200CF8FB1 /* LaunchScreen.storyboard */,
 				FE9C663B2458DB3200CF8FB1 /* Info.plist */,
 			);
-			path = "DeckOf1Card(withworkingfiles)";
+			path = Resorces;
+			sourceTree = "<group>";
+		};
+		FE9C66422458DB7400CF8FB1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FE9C664D2458DC4000CF8FB1 /* CardError.swift */,
+				FE9C664F2458DC6600CF8FB1 /* UIViewControllerExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FE9C66432458DB7C00CF8FB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE9C66492458DBE900CF8FB1 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE9C66442458DB8400CF8FB1 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				FE9C664B2458DC0800CF8FB1 /* CardController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		FE9C66452458DB8B00CF8FB1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE9C66472458DBAE00CF8FB1 /* CardViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FE9C66462458DB9300CF8FB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE9C66332458DB3200CF8FB1 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9C66482458DBAE00CF8FB1 /* CardViewController.swift in Sources */,
+				FE9C664C2458DC0800CF8FB1 /* CardController.swift in Sources */,
 				FE9C66322458DB3200CF8FB1 /* ViewController.swift in Sources */,
+				FE9C664A2458DBE900CF8FB1 /* Card.swift in Sources */,
+				FE9C66502458DC6600CF8FB1 /* UIViewControllerExtension.swift in Sources */,
 				FE9C662E2458DB3200CF8FB1 /* AppDelegate.swift in Sources */,
+				FE9C664E2458DC4000CF8FB1 /* CardError.swift in Sources */,
 				FE9C66302458DB3200CF8FB1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "DeckOf1Card(withworkingfiles)/Info.plist";
+				INFOPLIST_FILE = "DeckOf1Card(withworkingfiles)/Resorces/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "DeckOf1Card(withworkingfiles)/Info.plist";
+				INFOPLIST_FILE = "DeckOf1Card(withworkingfiles)/Resorces/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
